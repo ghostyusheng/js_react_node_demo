@@ -4,6 +4,7 @@ import ReactDom from 'react-dom';
 import { Route, HashRouter, hashHistory, IndexRoute } from 'react-router-dom'
 import Test from './components/Test'
 import 'antd/dist/antd.min.css';
+import css from '../public/base.css';
 
 //import axios from 'axios';
 

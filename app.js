@@ -23,6 +23,10 @@ app.get('/bundle.js', function (req, res) {
   res.sendFile(BASE_DIR + '/build/bundle.js');
 });
 
+app.get('/*.css', function (req, res) {
+  res.sendFile(BASE_DIR + '/src/*.js');
+});
+
 
 app.get('/test', function (req, res) {
   res.send('Hello World!');
