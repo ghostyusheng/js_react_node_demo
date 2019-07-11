@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import ReactDom from 'react-dom';
 import { Route, HashRouter, hashHistory, IndexRoute } from 'react-router-dom'
+import Test from './components/Test'
+import 'antd/dist/antd.min.css';
+
 //import axios from 'axios';
 
-function print(p) {
-    console.log(p)
-}
 
 class App extends Component {
     render() {
@@ -20,7 +20,6 @@ class App extends Component {
 
 class About extends Component {
     render() {
-        print('about')
         return (
             <div class="main">
                 about
@@ -51,7 +50,6 @@ class User extends Component {
 
 class NoMatch extends Component {
     render() {
-        print('nomatch')
         return (
             <div class="main">
                 打底页
@@ -62,7 +60,7 @@ class NoMatch extends Component {
 
 render((
   <HashRouter>
-     <Route path='/cc' component={App} />
+     <Route path='/cc' component={Test} />
      <Route path='/aa' component={User} />
      <Route path='/bb' component={About} />
   </HashRouter>

@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+
  
 module.exports = {
     entry: './src/index.js', //相对路径
@@ -32,3 +33,4 @@ module.exports = {
         ]
     },
 }
+
