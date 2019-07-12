@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import ReactDom from 'react-dom';
 import { Route, HashRouter, hashHistory, IndexRoute } from 'react-router-dom'
 import Test from './components/Test'
+import 'normalize.css';
 import 'antd/dist/antd.min.css';
 import css from '../public/base.css';
 

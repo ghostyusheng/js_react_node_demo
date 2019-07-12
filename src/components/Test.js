@@ -8,33 +8,33 @@ export default class About extends Component {
     render() {
         console.log(123)
         return (
-            <div class="main">
+            <div class="main-login">
                 <div class="card">
-                    <Row>
-                      <Col span={6}>
+                    <Row class="login-row">
+                      <Col span={6} className="login-col">
                         <label>用户名</label>
                       </Col>
-                      <Col span={6}>
-                        <Input
+                      <Col span={6} className="login-col">
+                        <Input className="login-input"
                             prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
                             placeholder="Username"
                         />
                       </Col>
                     </Row>
-                    <Row>
-                      <Col span={6}>
+                    <Row class="login-row">
+                      <Col span={6} className="login-col">
                         <label>密码</label>
                       </Col>
-                      <Col span={6}>
-                        <Input
+                      <Col span={6} className="login-col">
+                        <Input className="login-input"
                           prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
                           type="password"
                           placeholder="Password"
                         />
                       </Col>
                     </Row>
-                    <Row>
-                        <Button type="primary">提交</Button>
+                    <Row class="login-row">
+                        <Button type="primary" className="login-submit">提交</Button>
                     </Row>
                 </div>
             </div>
